@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "google-workspace": {
+      "command": "uvx",
+      "args": [
+        "--from",
+        "git+https://github.com/guinacio/mcp-google-workspace",
+        "mcp-google-workspace"
+      ],
+      "env": {
+        "MCP_TOOL_TIER": "core",
+        "MCP_CREDENTIALS_DIR": "${HOME}/.kiro/google-workspace",
+        "ENABLE_MEET": "true",
+        "ENABLE_CHAT": "false",
+        "ENABLE_KEEP": "false",
+        "ENABLE_APPS_DASHBOARD": "false"
+      },
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}
